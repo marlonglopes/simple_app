@@ -4,7 +4,6 @@ class PagesController < ApplicationController
 #TODO todo
 #FIXME fixme
 
-
 #OPTIMIZE optmize
 
   def home
