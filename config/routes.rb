@@ -1,5 +1,7 @@
 SampeApp::Application.routes.draw do
 
+  resources :patients
+
 	get "users/new"
 	get "pages/about"
 	get "pages/contact"
