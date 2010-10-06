@@ -10,6 +10,7 @@
 
 -------------------------------------------------------------- */
 
+<<<<<<< HEAD:public/stylesheets/blueprint/src/forms.css
 /* 
 	A special hack is included for IE8 since it does not apply padding 
 	correctly on fieldsets
@@ -20,6 +21,12 @@ legend      { font-weight: bold; font-size:1.2em; margin-top:-0.2em; margin-bott
 
 fieldset, #IE8#HACK { padding-top:1.4em; } 
 legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
+=======
+label       { font-weight: bold; }
+fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend      { font-weight: bold; font-size:1.2em; }
+
+>>>>>>> master:public/stylesheets/blueprint/src/forms.css
 
 /* Form fields
 -------------------------------------------------------------- */
@@ -32,16 +39,26 @@ legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
  */
 input[type=text], input[type=password],
 input.text, input.title,
+<<<<<<< HEAD:public/stylesheets/blueprint/src/forms.css
 textarea {
+=======
+textarea, select {
+>>>>>>> master:public/stylesheets/blueprint/src/forms.css
   background-color:#fff;
   border:1px solid #bbb;
 }
 input[type=text]:focus, input[type=password]:focus,
 input.text:focus, input.title:focus,
+<<<<<<< HEAD:public/stylesheets/blueprint/src/forms.css
 textarea:focus {
   border-color:#666;
 }
 select { background-color:#fff; border-width:1px; border-style:solid; }
+=======
+textarea:focus, select:focus {
+  border-color:#666;
+}
+>>>>>>> master:public/stylesheets/blueprint/src/forms.css
 
 input[type=text], input[type=password],
 input.text, input.title,
@@ -62,20 +79,35 @@ form.inline { line-height:3; }
 form.inline p { margin-bottom:0; }
 
 
+<<<<<<< HEAD:public/stylesheets/blueprint/src/forms.css
 /* Success, info, notice and error/alert boxes
 -------------------------------------------------------------- */
 
 .error,
 .alert, 
+=======
+/* Success, info, notice and error boxes
+-------------------------------------------------------------- */
+
+.error,
+>>>>>>> master:public/stylesheets/blueprint/src/forms.css
 .notice,
 .success, 
 .info 			{ padding: 0.8em; margin-bottom: 1em; border: 2px solid #ddd; }
 
+<<<<<<< HEAD:public/stylesheets/blueprint/src/forms.css
 .error, .alert { background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 .notice     { background: #fff6bf; color: #514721; border-color: #ffd324; }
 .success    { background: #e6efc2; color: #264409; border-color: #c6d880; }
 .info 			{ background: #d5edf8; color: #205791; border-color: #92cae4; }
 .error a, .alert a { color: #8a1f11; }
+=======
+.error      { background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
+.notice     { background: #fff6bf; color: #514721; border-color: #ffd324; }
+.success    { background: #e6efc2; color: #264409; border-color: #c6d880; }
+.info 			{ background: #d5edf8; color: #205791; border-color: #92cae4; }
+.error a    { color: #8a1f11; }
+>>>>>>> master:public/stylesheets/blueprint/src/forms.css
 .notice a   { color: #514721; }
 .success a  { color: #264409; }
 .info a			{ color: #205791; }
