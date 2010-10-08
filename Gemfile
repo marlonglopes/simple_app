@@ -11,12 +11,14 @@ gem 'simple_form'
 
 group :development do
   gem "rspec-rails", ">= 2.0.0.beta.22"
+  gem 'annotate'
 end
 
 group :test do
 	gem 'rspec'
 	gem 'spork'
 	gem 'webrat'
+	gem 'annotate'
 end
 
 
