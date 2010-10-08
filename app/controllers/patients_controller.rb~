@@ -2,7 +2,6 @@ class PatientsController < ApplicationController
   # GET /patients
   # GET /patients.xml
   def index
-    @title="Patients"
     @patients = Patient.all
 
     respond_to do |format|
