@@ -1,10 +1,11 @@
 SampeApp::Application.routes.draw do
 
-  get "users/new"
+#	get "users/new"
+#	get "users/show"
 
-  resources :patients
+	resources :patients
+	resources :users
 
-	get "users/new"
 	get "pages/about"
 	get "pages/contact"
 	get "pages/home"
