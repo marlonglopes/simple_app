@@ -10,8 +10,8 @@ class User < ActiveRecord::Base
 
 	validates :name, :presence => true, :length => { :maximum => 50 }
 
-	validates :email, :presence => true, :format =>{ :with => email_regex }, 
-																:uniqueness =>{:case_sensitive => false}
+	validates :email, :presence => true, :format =>{ :with => email_regex }, :uniqueness =>{:case_sensitive => false}
+
 	before_save :encrypt_password
 
 	def has_password?(submitted_password)
@@ -19,7 +19,9 @@ class User < ActiveRecord::Base
 	end
 
 	def authenticate(email, submitted_password)
-
+		user = find_by_email(email)
+		return nil if user.nil?
+		return user if user.has_password?(submitted_password)
 	end
 
 
