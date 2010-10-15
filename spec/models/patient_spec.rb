@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Patient do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
+#describe Patient do
+#  pending "add some examples to (or delete) #{__FILE__}"
+#end
 
 # == Schema Information
 #

@@ -7,6 +7,7 @@ describe User do
 			:name => "Example User",
 			:email => "user@example.com",
 			:password => "foobar",
+			:password_confirmation => "foobar"
 		}
 	end
 
@@ -120,7 +121,6 @@ describe User do
 			@user.has_password?("invalid").should be_false
 		end
 	end
-
 
 	describe "authenticate method" do
 

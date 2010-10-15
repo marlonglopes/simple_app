@@ -9,6 +9,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'simple_form'
 
+gem 'gravatar_image_tag'
+
 group :development do
   gem 'rspec-rails', '>= 2.0.0.beta.22'
   gem 'annotate'
@@ -19,6 +21,7 @@ group :test do
 	gem 'spork'
 	gem 'webrat'
 	gem 'annotate'
+	gem 'factory_girl_rails', '1.0'
 end
 
 # Use unicorn as the web server
