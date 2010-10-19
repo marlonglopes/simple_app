@@ -9,18 +9,20 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'simple_form'
 
+gem 'gravatar_image_tag'
+
 group :development do
-  gem "rspec-rails", ">= 2.0.0.beta.22"
-  gem 'annotate-models'
+  gem 'rspec-rails', '>= 2.0.0.beta.22'
+  gem 'annotate'
 end
 
 group :test do
 	gem 'rspec'
 	gem 'spork'
 	gem 'webrat'
-	gem 'annotate-models'
+	gem 'annotate'
+	gem 'factory_girl_rails', '1.0'
 end
-
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -33,7 +35,9 @@ end
 
 # Bundle the extra gems:
 # gem 'bj'
+
 gem 'nokogiri'
+
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
