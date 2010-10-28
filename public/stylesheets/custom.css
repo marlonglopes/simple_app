@@ -1,4 +1,3 @@
-
 .container {
 	height: 800px;
 	width: 600px;
@@ -97,6 +96,7 @@ a.signup_button {
 }
 
 /* Round corners */
+
 .round {
 	-moz-border-radius:	10px;
 	-webkit-border-radius:	10px;
