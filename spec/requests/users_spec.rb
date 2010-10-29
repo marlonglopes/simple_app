@@ -3,6 +3,7 @@ require 'spec_helper'
 describe "Users" do
 
 	describe "signup" do
+
 		it "should not make a new user" do
 			visit signup_path
 			fill_in "Name", 			:with => ""
@@ -13,6 +14,7 @@ describe "Users" do
 			response.should render_template('users/new')
 			response.should have_selector("div#error_explanation")
 		end
+
 		it "should not make a new user with lambda" do
 			lambda do
 			visit signup_path
