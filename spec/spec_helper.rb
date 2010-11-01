@@ -33,6 +33,11 @@ Spork.prefork do
 		# railties/lib/rails/application/bootstrap.rb
 		config.include Webrat::Matchers, :type => :views		
 		ActiveSupport::Dependencies.clear
+
+		def test_sign_in(user)
+			controller.sign_in(user)
+		end
+
 		end
 	end
 	Spork.each_run do
