@@ -1,16 +1,17 @@
 class UsersController < ApplicationController
 
-
-
-def index
-
-	@users=User.all
-	
-end
+	def index
+		@users=User.all
+	end
 
 	def new
 		@user = User.new
 		@title="Sign up"
+	end
+
+	def edit
+		@user=User.find(params[:id])
+		@title="Edit user"
 	end
 
 	def show
