@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 	end
 
 	def new
+		redirect_to users_path unless !signed_in?
 		@title="Sign up"		
 		@user = User.new
 	end
@@ -38,7 +39,6 @@ class UsersController < ApplicationController
 			@title="#{params[:id]} não existe"
 		end
 	end
-
 
 	def create
 		@user = User.new(params[:user])
