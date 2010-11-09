@@ -9,8 +9,8 @@ ul.users {
 
 
 .container {
-	height: 800px;
-	width: 600px;
+	height: 90%;
+	width: 90%;
 }
 
 body {
@@ -116,7 +116,7 @@ a.signup_button {
 footer {
 	text-align: center;
 	margin-top: 10px;
-	width: 600px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }

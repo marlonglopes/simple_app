@@ -1,3 +1,20 @@
+GIT
+  remote: git://github.com/skozlov/netzke-basepack.git
+  revision: 96aaa35c8ad88a8f72aee7394502346203217b93
+  specs:
+    netzke-basepack (0.6.3)
+      acts_as_list
+      meta_where (>= 0.9.3)
+      netzke-core (~> 0.6.4)
+      will_paginate (~> 3.0.pre2)
+
+GIT
+  remote: git://github.com/skozlov/netzke-core.git
+  revision: df3608539ec3d9fed68d66a05ee89e586fde2d68
+  specs:
+    netzke-core (0.6.5)
+      activesupport (>= 3.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -28,6 +45,7 @@ GEM
       activemodel (= 3.0.1)
       activesupport (= 3.0.1)
     activesupport (3.0.1)
+    acts_as_list (0.1.2)
     annotate-models (1.0.4)
     arel (1.0.1)
       activesupport (~> 3.0.0)
@@ -47,6 +65,10 @@ GEM
       i18n (~> 0.4.1)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_where (0.9.6)
+      activerecord (~> 3.0.0)
+      activesupport (~> 3.0.0)
+      arel (~> 1.0.1)
     mime-types (1.16)
     nokogiri (1.4.3.1)
     polyglot (0.3.1)
@@ -102,6 +124,8 @@ DEPENDENCIES
   factory_girl_rails (= 1.0)
   faker (= 0.3.1)
   gravatar_image_tag (= 0.1.0)
+  netzke-basepack!
+  netzke-core!
   nokogiri
   rails (= 3.0.1)
   rspec (= 2.0.1)

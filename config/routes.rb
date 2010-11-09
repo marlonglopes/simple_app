@@ -1,5 +1,7 @@
 SampeApp::Application.routes.draw do
 
+	netzke
+
 #  get "sessions/new"
 
 #	get "users/new"
