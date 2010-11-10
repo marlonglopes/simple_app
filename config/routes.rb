@@ -16,7 +16,8 @@ SampeApp::Application.routes.draw do
 	match '/signup', :to => 'users#new'
 	match '/signin', :to => 'sessions#new'
 	match '/signout', :to => 'sessions#destroy'
- 
+	match '/users/(:view)', :to => 'users#index'
+
 	get "pages/about"
 	get "pages/contact"
 	get "pages/home"

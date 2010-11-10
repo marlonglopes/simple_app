@@ -1,12 +1,17 @@
-<!--<%= netzke :users, :class_name => "Basepack::GridPanel", :model => "User" %>-->
 
-<h1>All users</h1>
+<% if (@view=="2") %>
 
-<%= will_paginate %>
+	<%= netzke :users, :class_name => "Basepack::GridPanel", :model => "User" %>
+
+<% else %>
+
+	<h1>All users</h1>
+
+	<%= will_paginate %>
 	<ul class="users">
 		<%= render @users %>
 	</ul>
-<%= will_paginate %>
+	<%= will_paginate %>
 
-
+<% end %>
 

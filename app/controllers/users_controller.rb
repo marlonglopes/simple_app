@@ -4,7 +4,11 @@ class UsersController < ApplicationController
 	before_filter :correct_user, :only => [:edit, :update]
 	before_filter :admin_user, :only => :destroy
 
+
 	def index
+
+		@view=params[:view]
+
 		@title="All users"
 		@users = User.paginate( :page => params[:page], :per_page => 10)
 	end
