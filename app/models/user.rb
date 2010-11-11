@@ -1,10 +1,27 @@
+# == Schema Information
+# Schema version: 20101108155428
+#
+# Table name: users
+#
+#  id                 :integer         not null, primary key
+#  name               :string(255)
+#  email              :string(255)
+#  created_at         :datetime
+#  updated_at         :datetime
+#  encrypted_password :string(255)
+#  salt               :string(255)
+#  admin              :boolean
+#
+
 require 'digest'
 
 class User < ActiveRecord::Base
 
-	attr_accessor :password, :password_confirmation 
+	attr_accessor :password , :password_confirmation
 
-	attr_accessible :name, :email, :password, :password_confirmation 
+	attr_accessible :name, :email, :password, :password_confirmation
+
+	has_many :microposts, :dependent => :destroy
 
 	email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -19,7 +36,6 @@ class User < ActiveRecord::Base
 	def has_password?(submitted_password)
 		encrypted_password == encrypt(submitted_password)
 	end
-
 
 #	def self.authenticate(email, submitted_password)
 #		user = find_by_email(email)
@@ -93,17 +109,4 @@ private
 	end
 
 end
-
-# == Schema Information
-#
-# Table name: users
-#
-#  id                 :integer         not null, primary key
-#  name               :string(255)
-#  email              :string(255)
-#  created_at         :datetime
-#  updated_at         :datetime
-#  encrypted_password :string(255)
-#  salt               :string(255)
-#
 

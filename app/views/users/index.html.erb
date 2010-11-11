@@ -1,15 +1,17 @@
-<h1>All users</h1>
 
-<%= will_paginate %>
+<% if (@view=="2") %>
 
+	<%= netzke :users, :class_name => "Basepack::GridPanel", :model => "User" %>
+
+<% else %>
+
+	<h1>All users</h1>
+
+	<%= will_paginate %>
 	<ul class="users">
-		<% @users.each do |user| %>
-		<li>
-		<%= gravatar_for user, :size => 30 %>
-		<%= link_to user.name, user %>
-		</li>
-		<% end %>
+		<%= render @users %>
 	</ul>
+	<%= will_paginate %>
 
-<%= will_paginate %>
+<% end %>
 
