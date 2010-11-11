@@ -28,6 +28,17 @@ describe User do
 			@user.microposts.should == [@mp2, @mp1]
 		end
 
+
+		it "should destroy associated microposts" do
+			@user.destroy
+			[@mp1, @mp2].each do |micropost|
+				lambda do
+					Micropost.find(micropost.id)
+				end.should raise_error(ActiveRecord::RecordNotFound)
+			end
+		end
+
+
 	end
 
 	it "should create a new instance given valid attributes" do

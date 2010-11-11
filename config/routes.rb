@@ -2,16 +2,10 @@ SampeApp::Application.routes.draw do
 
 	netzke
 
-#  get "sessions/new"
-
-#	get "users/new"
-#	get "users/show"
-
 	resources :patients
 	resources :users
-
-#	resources :sessions
 	resources :sessions, :only => [:new, :create, :destroy]
+	resources :microposts, :only => [:create, :destroy]
 
 	match '/signup', :to => 'users#new'
 	match '/signin', :to => 'sessions#new'
