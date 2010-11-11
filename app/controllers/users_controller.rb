@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 
 		@title="All users"
 		@users = User.paginate( :page => params[:page], :per_page => 10)
+
 	end
 
 	def new
@@ -37,7 +38,7 @@ class UsersController < ApplicationController
 	def show
 		begin	
 			@user = User.find(params[:id])
-			@microposts = @user.microposts.paginate(:page => params[:page], :per_page=>10)
+			@microposts = @user.feed.paginate(:page => params[:page], :per_page=>10)
 			@title=@user.name
 		rescue
 			@title="#{params[:id]} não existe"

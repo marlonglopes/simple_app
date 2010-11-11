@@ -3,9 +3,12 @@ SampeApp::Application.routes.draw do
 	netzke
 
 	resources :patients
-	resources :users
+
+	resources :users do
+		resources :microposts, :only => [:create, :destroy]
+	end
+
 	resources :sessions, :only => [:new, :create, :destroy]
-	resources :microposts, :only => [:create, :destroy]
 
 	match '/signup', :to => 'users#new'
 	match '/signin', :to => 'sessions#new'

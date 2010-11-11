@@ -4,6 +4,11 @@ class MicropostsController < ApplicationController
 	before_filter :authorized_user, :only => :destroy
 
 
+	def index
+		@user=current.user
+		@microposts = @user.feed.paginate(:page => params[:page], :per_page=>10)
+	end
+
 	def create
 		@micropost = current_user.microposts.build(params[:micropost])
 		if @micropost.save
@@ -15,13 +20,10 @@ class MicropostsController < ApplicationController
 		end
 	end
 
-
 	def destroy
 		@micropost.destroy
 		redirect_back_or root_path
 	end
-
-
 
 private
 
