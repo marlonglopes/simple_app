@@ -54,6 +54,10 @@ class User < ActiveRecord::Base
 		(user && user.salt == cookie_salt) ? user : nil
 	end
 
+#	def admin?
+#		self.admin
+#	end
+
 
 #	def self.authenticate(email, submitted_password)
 #		user = find_by_email(email)
@@ -97,6 +101,15 @@ class User < ActiveRecord::Base
 #	def updated
 #		updated_at > 5.minutes.ago
 #	end
+
+
+	def feed
+#		# This is preliminary. See Chapter 12 for the full implementation.
+#		Micropost.where("user_id = ?", id)
+		microposts
+	end
+
+
 
 private
 

@@ -112,7 +112,6 @@ a.signup_button {
 	border-radius:		10px;
 }
 
-
 footer {
 	text-align: center;
 	margin-top: 10px;
@@ -192,7 +191,6 @@ div.field, div.actions {
 	list-style: square;
 }
 
-
 /*microposts*/
 
 h1.micropost {
@@ -208,9 +206,9 @@ table.microposts tr {
 }
 
 table.microposts tr td.gravatar {
-border-top: 1px solid #ccc;
-vertical-align: top;
-width: 50px;
+	border-top: 1px solid #ccc;
+	vertical-align: top;
+	width: 50px;
 }
 
 table.microposts tr td.micropost {
