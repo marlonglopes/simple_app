@@ -3,7 +3,7 @@
 
 
 
-<%= netzke :users, :class_name => "Basepack::GridPanel", :model => "User",:columns=>[:name,:email,:admin] %>
+<%= netzke :users, :class_name => "Basepack::GridPanel", :model => "User",:columns=>[:nameemail,:admin] %>
 
 <% else %>
 

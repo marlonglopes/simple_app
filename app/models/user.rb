@@ -88,6 +88,15 @@ class User < ActiveRecord::Base
 #		return user if user.has_password?(submitted_password)
 #	end
 
+#virtual atribute for netzke
+#	netzke_attribute :nameemail
+#	def nameemail
+#		"#{name}, #{email}"
+#	end
+#	netzke_attribute :updated
+#	def updated
+#		updated_at > 5.minutes.ago
+#	end
 
 private
 
