@@ -8,7 +8,7 @@
 		<%= current_user.name %>
 	</span>
 
-	<span class="microposts">
+	<span id="microposts_count" class="microposts">
 		<%= pluralize(current_user.microposts.count, "micropost") %>
 	</span>
 

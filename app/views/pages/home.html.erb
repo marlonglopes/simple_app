@@ -5,7 +5,10 @@
 			<h1 class="micropost">What's up?</h1>
 
 			<%= render 'shared/micropost_form' %>
-			<%= render 'shared/feed' %>
+
+			<div id="microposts">
+					<%= render 'shared/feed' %>				
+			</div>
 
 		</td>
 			<td class="sidebar round">
@@ -13,6 +16,8 @@
 		</td>
 		</tr>
 	</table>
+
+
 <% else %>
 	<h1>Sample App</h1>
 	<p>

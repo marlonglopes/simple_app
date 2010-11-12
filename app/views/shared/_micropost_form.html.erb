@@ -1,5 +1,5 @@
 
-<%= form_for([@user, @micropost]) do |f| %>
+<%= form_for([@user, @micropost], :remote=>true) do |f| %>
 
 	<%= render 'shared/error_messages', :object => f.object %>
 

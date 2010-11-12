@@ -10,6 +10,7 @@ gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'will_paginate', '3.0.pre2'
 gem 'simple_form'
+gem 'jquery-rails'
 
 gem 'netzke-core', :git => "git://github.com/skozlov/netzke-core.git"
 gem 'netzke-basepack', :git => "git://github.com/skozlov/netzke-basepack.git"

@@ -11,13 +11,19 @@ class MicropostsController < ApplicationController
 
 	def create
 		@micropost = current_user.microposts.build(params[:micropost])
-		if @micropost.save
-			flash[:success] = "Micropost created!"
-			redirect_to root_path
-		else
-			@feed_items = []
-			render 'pages/home'
+
+		respond_to do |format|
+			if @micropost.save
+				@feed_items = current_user.feed.paginate(:page => params[:page], :per_page=>10)
+				format.html { redirect_to(root_path, :success => "Micropost created!") }
+				format.js
+			else
+				@feed_items = []
+				format.html { render 'pages/home' }
+				format.js
+			end
 		end
+
 	end
 
 	def destroy
