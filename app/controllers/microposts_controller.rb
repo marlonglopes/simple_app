@@ -18,8 +18,8 @@ class MicropostsController < ApplicationController
 				format.html { redirect_to(root_path, :success => "Micropost created!") }
 				format.js
 			else
-				@feed_items = []
-				format.html { render 'pages/home' }
+				@feed_items = current_user.feed.paginate(:page => params[:page], :per_page=>10)
+				format.html { redirect_to(root_path, :error => "Can not be Blank!") }
 				format.js
 			end
 		end
