@@ -17,7 +17,7 @@
 		<td>
 <!--		<%= link_to "delete", [user,feed_item], :method => :delete, :remote=>true, :confirm => "You sure?",:title => feed_item.content %>-->
 
-		<%= link_to "delete", [user,feed_item], :method => :delete, :remote=>true %>
+		<%= link_to "delete", [user,feed_item], :method => :delete, :remote=>true:title => feed_item.content %>
 
 		</td>
 	<% end %>
