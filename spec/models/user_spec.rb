@@ -11,7 +11,6 @@ describe User do
 		}
 	end
 
-
 	describe "micropost associations" do
 		
 		before(:each) do
@@ -20,6 +19,7 @@ describe User do
 			@mp2 = Factory(:micropost, :user => @user, :created_at => 1.hour.ago)
 		end
 
+
 		describe "status feed" do
 
 			it "should have a feed" do
@@ -27,14 +27,27 @@ describe User do
 			end
 
 			it "should include the user's microposts" do
-				@user.feed.include?(@mp1).should be_true
-				@user.feed.include?(@mp2).should be_true
+
+				@user.feed.should include(@mp1)
+				@user.feed.should include(@mp2)
+
+#				@user.feed.include?(@mp1).should be_true
+#				@user.feed.include?(@mp2).should be_true
+
 			end
 
 			it "should not include a different user's microposts" do
 				mp3 = Factory(:micropost, :user => Factory(:user, :email => Factory.next(:email)))
 				@user.feed.include?(mp3).should be_false
 			end
+
+			it "should include the microposts of followed users" do
+				followed = Factory(:user, :email => Factory.next(:email))
+				mp3 = Factory(:micropost, :user => followed)
+				@user.follow!(followed)
+				@user.feed.should include(mp3)
+			end
+
 
 		end
 
@@ -265,6 +278,9 @@ describe User do
 
 
 	end
+
+
+
 
 end
 

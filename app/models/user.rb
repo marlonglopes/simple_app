@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
 
 	attr_accessible :name, :email, :password, :password_confirmation
 
-
+	scope :admin, where(:admin => true)
 
 	has_many :microposts, :dependent => :destroy
 
@@ -127,21 +127,18 @@ class User < ActiveRecord::Base
 #	end
 
 
+#	def feed
+
+##		# This is preliminary. See Chapter 12 for the full implementation.
+##		Micropost.where("user_id = ?", id)
+
+#		microposts
+
+#	end
+
+
 	def feed
-
-#		# This is preliminary. See Chapter 12 for the full implementation.
-#		Micropost.where("user_id = ?", id)
-
-#		m=[]		
-
-#		following.each do |f|
-#			m << f.microposts	
-#		end
-#		
-##		microposts << m
-
-		microposts
-
+		Micropost.from_users_followed_by(self)
 	end
 
 
