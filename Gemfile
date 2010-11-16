@@ -12,8 +12,13 @@ gem 'will_paginate', '3.0.pre2'
 gem 'simple_form'
 gem 'jquery-rails'
 
+<<<<<<< HEAD:Gemfile
 #gem 'netzke-core', :git => "git://github.com/skozlov/netzke-core.git"
 #gem 'netzke-basepack', :git => "git://github.com/skozlov/netzke-basepack.git"
+=======
+# gem 'netzke-core', :git => "git://github.com/skozlov/netzke-core.git"
+# gem 'netzke-basepack', :git => "git://github.com/skozlov/netzke-basepack.git"
+>>>>>>> 10803b018bf7c70cf79635b75bbf38f93f4d25a0:Gemfile
 
 group :development do
 	gem 'rspec-rails', '2.0.1'

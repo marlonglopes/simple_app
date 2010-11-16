@@ -1,4 +1,6 @@
+
 <tr>
+
 	<td class="micropost">
 		<span class="content"><%= micropost.content %></span>
 		<span class="timestamp">
@@ -7,7 +9,7 @@
 	</td>
 
 	<% user = micropost.user rescue User.find(micropost.user_id) %>
-	<% if current_user?(user) || current_user.name==user.name %>
+	<% if current_user?(user) || current_user.email==user.email %>
 		<td>
 			<%= link_to "delete", [user,micropost], :method => :delete,:confirm => "You sure?",:title => micropost.content %>
 		</td>
