@@ -4,6 +4,19 @@ class UsersController < ApplicationController
 	before_filter :correct_user, :only => [:edit, :update]
 	before_filter :admin_user, :only => :destroy
 
+
+	def following
+		
+	end
+
+	def followers
+
+	end
+
+	def tigers
+
+	end
+
 	def index
 
 		@view=params[:view]

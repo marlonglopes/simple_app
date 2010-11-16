@@ -5,8 +5,17 @@ SampeApp::Application.routes.draw do
 	resources :patients
 
 	resources :users do
+		member do
+			get :following, :followers
+		end
+		collection do
+			get :tigers
+		end
+
 		resources :microposts, :only => [:create, :destroy]
+
 	end
+
 
 	resources :sessions, :only => [:new, :create, :destroy]
 
