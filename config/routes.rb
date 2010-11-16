@@ -1,6 +1,6 @@
 SampeApp::Application.routes.draw do
 
-	netzke
+#	netzke
 
 	resources :patients
 

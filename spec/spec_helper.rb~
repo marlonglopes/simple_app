@@ -1,6 +1,10 @@
 require 'rubygems'
 require 'spork'
-#require 'webrat'
+require 'webrat'
+
+
+include Webrat::Methods 
+include Webrat::Matchers 
 
 Spork.prefork do
 	# Loading more in this block will cause your tests to run faster. However,
@@ -33,6 +37,11 @@ Spork.prefork do
 		# railties/lib/rails/application/bootstrap.rb
 		config.include Webrat::Matchers, :type => :views		
 		ActiveSupport::Dependencies.clear
+
+		def test_sign_in(user)
+			controller.sign_in(user)
+		end
+
 		end
 	end
 	Spork.each_run do
