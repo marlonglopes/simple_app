@@ -21,9 +21,9 @@ class User < ActiveRecord::Base
 
 	attr_accessible :name, :email, :password, :password_confirmation
 
+
+
 	has_many :microposts, :dependent => :destroy
-
-
 
 	has_many :relationships, :foreign_key => "follower_id", :dependent => :destroy
 
@@ -31,7 +31,6 @@ class User < ActiveRecord::Base
 
 	has_many :reverse_relationships, :foreign_key => "followed_id",:class_name => "Relationship",:dependent => :destroy
 	has_many :followers, :through => :reverse_relationships, :source => :follower
-
 
 
 
@@ -129,9 +128,20 @@ class User < ActiveRecord::Base
 
 
 	def feed
+
 #		# This is preliminary. See Chapter 12 for the full implementation.
 #		Micropost.where("user_id = ?", id)
+
+#		m=[]		
+
+#		following.each do |f|
+#			m << f.microposts	
+#		end
+#		
+##		microposts << m
+
 		microposts
+
 	end
 
 
