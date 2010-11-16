@@ -1,9 +1,7 @@
 <tr>
-
 	<td class="gravatar">
 		<%= link_to gravatar_for(feed_item.user), feed_item.user %>
 	</td>
-
 	<td class="micropost">
 		<span class="user">
 		<%= link_to feed_item.user.name, feed_item.user %>
@@ -15,11 +13,11 @@
 	</td>
 
 	<% user = feed_item.user rescue User.find(feed_item.user_id) %>
-	<% if current_user?(user) || current_user.email==user.email %>
+	<% if current_user?(user) || current_user.name==user.name %>
 		<td>
 <!--		<%= link_to "delete", [user,feed_item], :method => :delete, :remote=>true, :confirm => "You sure?",:title => feed_item.content %>-->
 
-		<%= link_to "delete", [user,feed_item], :method => :delete, :remote=>true %>
+		<%= link_to "delete", [user,feed_item], :method => :delete, :remote=>true:title => feed_item.content %>
 
 		</td>
 	<% end %>
