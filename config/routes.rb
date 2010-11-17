@@ -5,20 +5,21 @@ SampeApp::Application.routes.draw do
 	resources :patients
 
 	resources :users do
+
 		member do
 			get :following, :followers
 		end
+
 		collection do
 			get :tigers
 		end
 
-		resources :microposts, :only => [:create, :destroy]
+		resources :microposts, :only => [:index, :create, :destroy] 
 
 	end
 
 	resources :sessions, :only => [:new, :create, :destroy]
 	resources :relationships, :only => [:create, :destroy]
-
 
 	match '/signup', :to => 'users#new'
 	match '/signin', :to => 'sessions#new'

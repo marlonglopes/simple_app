@@ -1,4 +1,4 @@
 $('#microposts').html("<%= escape_javascript(render 'shared/feed')%>");
 $('#microposts_count').html('<%= pluralize(current_user.microposts.count, "micropost") %>');  
-//$('#micropost_content')[0].value=""
 $('#new_micropost')[0].reset();
+

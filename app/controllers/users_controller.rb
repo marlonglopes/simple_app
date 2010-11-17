@@ -60,6 +60,7 @@ class UsersController < ApplicationController
 		begin	
 			@user = User.find(params[:id])
 			@microposts = @user.feed.paginate(:page => params[:page], :per_page=>10)
+			@feed_items = @microposts
 			@title=@user.name
 		rescue
 			@title="#{params[:id]} não existe"
