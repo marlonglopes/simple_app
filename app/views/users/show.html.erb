@@ -11,9 +11,15 @@
 			<%= render 'follow_form' if signed_in? %>
 
 			<% unless @user.microposts.empty? %>
-				<table class="microposts" summary="User microposts">
-					<%= render @microposts %>
-				</table>
+
+<!--				<table class="microposts" summary="User microposts">-->
+<!--					<%= render @microposts %>-->
+<!--				</table>-->
+
+				<div id="microposts" data-current_user="<%= current_user.id %>">
+						<%= render 'shared/feed' %>				
+				</div>
+
 				<%= will_paginate @microposts %>
 			<% end %>
 		</td>
@@ -23,7 +29,6 @@
 			<strong>URL</strong> <%= link_to user_path(@user), @user %><br />
 			<strong>Microposts</strong> <%= @user.microposts.count %>
 			<%= render 'shared/stats' %>
-
 		</td>
 
 	</tr>
