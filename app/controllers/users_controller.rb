@@ -63,7 +63,7 @@ class UsersController < ApplicationController
 			@feed_items = @microposts
 			@title=@user.name
 		rescue
-			@title="#{params[:id]} não existe"
+			@title="#{params[:id]} nao existe"
 		end
 	end
 

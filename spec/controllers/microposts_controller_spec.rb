@@ -4,8 +4,6 @@ describe MicropostsController do
 
 	render_views
 
-
-
 	describe "DELETE 'destroy'" do
 
 		describe "for an unauthorized user" do
