@@ -54,10 +54,7 @@ class MicropostsController < ApplicationController
 				format.js
 			end
 		end
-	
-
-
-end
+	end
 
 private
 

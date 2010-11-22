@@ -1,0 +1,38 @@
+(in /home/administrator/railsprojects/simple_app)
+       patients GET    /patients(.:format)                      {:controller=>"patients", :action=>"index"}
+       patients POST   /patients(.:format)                      {:controller=>"patients", :action=>"create"}
+    new_patient GET    /patients/new(.:format)                  {:controller=>"patients", :action=>"new"}
+   edit_patient GET    /patients/:id/edit(.:format)             {:controller=>"patients", :action=>"edit"}
+        patient GET    /patients/:id(.:format)                  {:controller=>"patients", :action=>"show"}
+        patient PUT    /patients/:id(.:format)                  {:controller=>"patients", :action=>"update"}
+        patient DELETE /patients/:id(.:format)                  {:controller=>"patients", :action=>"destroy"}
+ following_user GET    /users/:id/following(.:format)           {:controller=>"users", :action=>"following"}
+ followers_user GET    /users/:id/followers(.:format)           {:controller=>"users", :action=>"followers"}
+   tigers_users GET    /users/tigers(.:format)                  {:controller=>"users", :action=>"tigers"}
+user_microposts GET    /users/:user_id/microposts(.:format)     {:controller=>"microposts", :action=>"index"}
+user_microposts POST   /users/:user_id/microposts(.:format)     {:controller=>"microposts", :action=>"create"}
+ user_micropost DELETE /users/:user_id/microposts/:id(.:format) {:controller=>"microposts", :action=>"destroy"}
+          users GET    /users(.:format)                         {:controller=>"users", :action=>"index"}
+          users POST   /users(.:format)                         {:controller=>"users", :action=>"create"}
+       new_user GET    /users/new(.:format)                     {:controller=>"users", :action=>"new"}
+      edit_user GET    /users/:id/edit(.:format)                {:controller=>"users", :action=>"edit"}
+           user GET    /users/:id(.:format)                     {:controller=>"users", :action=>"show"}
+           user PUT    /users/:id(.:format)                     {:controller=>"users", :action=>"update"}
+           user DELETE /users/:id(.:format)                     {:controller=>"users", :action=>"destroy"}
+       sessions POST   /sessions(.:format)                      {:controller=>"sessions", :action=>"create"}
+    new_session GET    /sessions/new(.:format)                  {:controller=>"sessions", :action=>"new"}
+        session DELETE /sessions/:id(.:format)                  {:controller=>"sessions", :action=>"destroy"}
+  relationships POST   /relationships(.:format)                 {:controller=>"relationships", :action=>"create"}
+   relationship DELETE /relationships/:id(.:format)             {:controller=>"relationships", :action=>"destroy"}
+         signup        /signup(.:format)                        {:controller=>"users", :action=>"new"}
+         signin        /signin(.:format)                        {:controller=>"sessions", :action=>"new"}
+        signout        /signout(.:format)                       {:controller=>"sessions", :action=>"destroy"}
+                       /users(/:view)(.:format)                 {:controller=>"users", :action=>"index"}
+    pages_about GET    /pages/about(.:format)                   {:controller=>"pages", :action=>"about"}
+  pages_contact GET    /pages/contact(.:format)                 {:controller=>"pages", :action=>"contact"}
+     pages_home GET    /pages/home(.:format)                    {:controller=>"pages", :action=>"home"}
+     pages_help GET    /pages/help(.:format)                    {:controller=>"pages", :action=>"help"}
+        contact        /contact(.:format)                       {:controller=>"pages", :action=>"contact"}
+          about        /about(.:format)                         {:controller=>"pages", :action=>"about"}
+           help        /help(.:format)                          {:controller=>"pages", :action=>"help"}
+           root        /(.:format)                              {:controller=>"pages", :action=>"home"}
