@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-rvm 1.8.7@rails300
-=======
-rvm 1.8.7@rails301
->>>>>>> f4a04f6e56647d0bd21b09edfa115beab266e4ac
+rvm 1.9.2-p136@simple_app
+

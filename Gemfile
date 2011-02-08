@@ -30,6 +30,10 @@ group :test do
 	gem 'factory_girl_rails', '1.0'
 end 
 
+group :test do
+    gem 'simplecov', '>= 0.3.8', :require => false # Will install simplecov-html as a dependency
+ end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

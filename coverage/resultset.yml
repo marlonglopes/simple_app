@@ -1,0 +1,720 @@
+--- 
+RSpec: 
+  :original_result: 
+    /home/administrator/railsprojects/simple_app/app/models/micropost.rb: 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 15
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 14
+    - 
+    - 14
+    - 
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/models/patient.rb: 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/models/relationship.rb: 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/models/user.rb: 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 6
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 10
+    - 10
+    - 
+    - 
+    - 
+    - 1
+    - 148
+    - 148
+    - 
+    - 
+    - 1
+    - 2
+    - 
+    - 
+    - 1
+    - 16
+    - 
+    - 
+    - 1
+    - 3
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 11
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 311
+    - 311
+    - 
+    - 
+    - 1
+    - 317
+    - 
+    - 
+    - 1
+    - 306
+    - 
+    - 
+    - 1
+    - 623
+    - 
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/controllers/application_controller.rb: 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/helpers/application_helper.rb: 
+    - 1
+    - 
+    - 1
+    - 
+    - 54
+    - 
+    - 54
+    - 0
+    - 
+    - 54
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 54
+    - 
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/helpers/microposts_helper.rb: 
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/helpers/pages_helper.rb: 
+    - 1
+    - 
+    /home/administrator/railsprojects/simple_app/app/helpers/patients_helper.rb: 
+    - 1
+    - 
+    /home/administrator/railsprojects/simple_app/app/helpers/sessions_helper.rb: 
+    - 1
+    - 
+    - 1
+    - 42
+    - 42
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 276
+    - 
+    - 
+    - 1
+    - 166
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 6
+    - 
+    - 
+    - 1
+    - 5
+    - 5
+    - 
+    - 
+    - 1
+    - 5
+    - 
+    - 
+    - 1
+    - 4
+    - 4
+    - 
+    - 
+    - 1
+    - 4
+    - 
+    - 
+    - 1
+    - 15
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 148
+    - 
+    - 
+    - 1
+    - 148
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/helpers/users_helper.rb: 
+    - 1
+    - 
+    - 1
+    - 
+    - 66
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/controllers/microposts_controller.rb: 
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/controllers/pages_controller.rb: 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 8
+    - 8
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 3
+    - 
+    - 
+    - 1
+    - 3
+    - 
+    - 
+    - 1
+    - 3
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/controllers/patients_controller.rb: 
+    - 1
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/controllers/relationships_controller.rb: 
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 2
+    - 2
+    - 
+    - 2
+    - 3
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 2
+    - 2
+    - 
+    - 2
+    - 3
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/controllers/sessions_controller.rb: 
+    - 1
+    - 
+    - 1
+    - 8
+    - 
+    - 
+    - 1
+    - 7
+    - 
+    - 7
+    - 3
+    - 3
+    - 3
+    - 
+    - 4
+    - 4
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    /home/administrator/railsprojects/simple_app/app/controllers/users_controller.rb: 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 5
+    - 
+    - 5
+    - 5
+    - 
+    - 
+    - 
+    - 1
+    - 6
+    - 6
+    - 6
+    - 
+    - 
+    - 1
+    - 3
+    - 3
+    - 
+    - 
+    - 1
+    - 6
+    - 6
+    - 4
+    - 4
+    - 
+    - 2
+    - 2
+    - 
+    - 
+    - 
+    - 1
+    - 6
+    - 6
+    - 6
+    - 6
+    - 6
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 7
+    - 7
+    - 4
+    - 4
+    - 4
+    - 
+    - 3
+    - 3
+    - 
+    - 
+    - 
+    - 1
+    - 2
+    - 2
+    - 2
+    - 2
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 21
+    - 
+    - 
+    - 1
+    - 14
+    - 14
+    - 
+    - 
+    - 1
+    - 4
+    - 
+    - 
+    - 
+  :created_at: 2011-02-08 13:42:32.440655 -03:00
+"/home/administrator/.rvm/gems/ruby-1.9.2-p136/bin/rcov ": 
+  :original_result: {}
+
+  :created_at: 2011-02-08 13:42:06.514203 -03:00
