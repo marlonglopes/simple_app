@@ -15,7 +15,7 @@
 <body>
 
 <div class="container">
-	<%= render 'layouts/header' %>
+
 	<section class="round">
 
 		<% flash.each do |key, value| %>
@@ -24,7 +24,7 @@
 
 		<%= yield %>
 	</section>
-	<%= render 'layouts/footer' %>
+
 </div>
 
 	<%= javascript_include_tag "jquery.js","jquery.min.js" %>
