@@ -2,6 +2,9 @@ require 'rubygems'
 require 'spork'
 require 'webrat'
 
+require 'simplecov'
+SimpleCov.start 'rails'
+
 
 Spork.prefork do
 	# Loading more in this block will cause your tests to run faster. However,

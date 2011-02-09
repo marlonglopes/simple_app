@@ -1,4 +1,8 @@
 class PatientsController < ApplicationController
+
+	before_filter :find_patient, :only => [:show, :edit, :update, :destroy]
+
+
   # GET /patients
   # GET /patients.xml
   def index
@@ -14,8 +18,6 @@ class PatientsController < ApplicationController
   # GET /patients/1
   # GET /patients/1.xml
   def show
-    @patient = Patient.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @patient }
@@ -35,7 +37,7 @@ class PatientsController < ApplicationController
 
   # GET /patients/1/edit
   def edit
-    @patient = Patient.find(params[:id])
+
   end
 
   # POST /patients
@@ -57,7 +59,6 @@ class PatientsController < ApplicationController
   # PUT /patients/1
   # PUT /patients/1.xml
   def update
-    @patient = Patient.find(params[:id])
 
     respond_to do |format|
       if @patient.update_attributes(params[:patient])
@@ -73,12 +74,18 @@ class PatientsController < ApplicationController
   # DELETE /patients/1
   # DELETE /patients/1.xml
   def destroy
-    @patient = Patient.find(params[:id])
+
     @patient.destroy
 
     respond_to do |format|
       format.html { redirect_to(patients_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  protected
+  
+  def find_patient
+      @patient = Patient.find(params[:id])
   end
 end
